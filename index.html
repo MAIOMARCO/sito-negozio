@@ -1,0 +1,117 @@
+<html>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!--codice jquary-->
+    <script type="text/javascript">
+
+        jQuery(document).ready(function() {
+
+            function scrollWin(anc){
+                target = jQuery(anc);
+                jQuery('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            }
+
+            jQuery(".menu1").click(function() {
+                scrollWin("#section1");
+            });
+            jQuery(".menu2").click(function() {
+                scrollWin("#section2");
+            });
+            jQuery(".menu3").click(function() {
+                scrollWin("#section3");
+            });
+            jQuery(".menu4").click(function() {
+                scrollWin("#section4");
+            });
+            jQuery(".menu5").click(function() {
+                scrollWin("#section5");
+            });
+ 
+
+        });
+    </script>
+    <!--codice jquary-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+    <style type ="text/css">
+
+    body{ padding: 0px; margin: 0px; text-align: center;}
+
+    .sections{ width: 100%; height: 600px;}
+    #section1{ background-color:floralwhite;}
+    #section2{ background-color:whitesmoke;}
+    #section3{ background-color: floralwhite;}
+    #section4{ background-color: whitesmoke;}
+    #section5{ background-color:floralwhite;}
+
+    .flex{ display: flex; align-items: center; justify-content: center;}
+    
+    h1{font-family: 'Bungee', cursive;font-size: 60px; margin: 0px;} 
+    p{font-family: 'Oswald', sans-serif; font-size: 21px; }
+    li1{font-family: 'Bungee';}
+
+    #menu{width: 100%; height: 90px; background-color: red; position: fixed;}
+    #menu ul{margin: 0px;}
+    #menu li, li1{display:inline; margin: 0px 70px; font-size: 21px;}
+    #menu li:hover{cursor: pointer; text-decoration: underline;}
+    
+    </style>
+
+</head>
+
+<body>
+<!--menu-->
+    <div id = "menu" class = "flex">
+        <div id = "menu_indoor">
+            <ul>
+                <li1>N.G.M</li1>
+            </ul>
+            <ul>
+                <li class ="menu1">Home Page</li>
+                <li class ="menu2">Chi Siamo</li>
+                <li class ="menu3">Portfolio</li>
+                <li class ="menu4">Link Utili</li>
+                <li class ="menu5">Contatti</li>
+            </ul>
+        </div>
+    </div>
+<!--menu-->
+
+<!--contenuto-->
+    <div id = "section1" class = "sections flex">
+        <div class = "sections_indoor">
+        <h1>Benvenuti sul nostro sito</h1>
+    <p>articoli da regalo, casalinghi...</p>
+       </div>
+    </div>
+    <div id = "section2" class = "sections flex">
+        <div class = "sections_indoor">
+            <h2>Chi Siamo</h2>
+        <p>benvenuti nel nostro sito</p>
+           </div>
+    </div>
+    <div id = "section3" class = "sections flex">
+        <div class = "sections_indoor">
+            <h3>Portfolio</h3>
+        <p>benvenuti nel nostro sito</p>
+           </div>
+    </div>
+    <div id = "section4" class = "sections flex">
+        <div class = "sections_indoor">
+            <h4>Link Utili</h4>
+        <p>benvenuti nel nostro sito</p>
+           </div>
+    </div>
+    <div id = "section5" class = "sections flex">
+        <div class = "sections_indoor">
+            <h5>Contatti</h5>
+        <p>benvenuti nel nostro sito</p>
+           </div>
+    </div>
+<!--contenuto-->
+</body>
+</html>
